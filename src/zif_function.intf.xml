@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_INTF" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOINTERF>
+    <CLSNAME>ZIF_FUNCTION</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>A function that accepts one argument and produces a result</DESCRIPT>
+    <EXPOSURE>2</EXPOSURE>
+    <STATE>1</STATE>
+    <UNICODE>X</UNICODE>
+   </VSEOINTERF>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>AND_THEN</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns a composed Function</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>APPLY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Applies this function to the given argument</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>COMPOSE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns a composed Function</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>IDENTITY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns a function that always returns its input argument</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>AND_THEN</CMPNAME>
+     <SCONAME>I_AFTER</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>The function to apply after this function is applied</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>AND_THEN</CMPNAME>
+     <SCONAME>R_COMPOSED_FUNCTION</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>A composed function that first applies this function</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>APPLY</CMPNAME>
+     <SCONAME>I_INPUT</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>The function argument</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>APPLY</CMPNAME>
+     <SCONAME>R_RESULT</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>The function result</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>COMPOSE</CMPNAME>
+     <SCONAME>I_BEFORE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>The function to apply before this function is applied</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>COMPOSE</CMPNAME>
+     <SCONAME>R_COMPOSED_FUNCTION</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>A composed function that first applies the before function</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>IDENTITY</CMPNAME>
+     <SCONAME>R_IDENTITY_FUNCTION</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>A function that always returns its input argument</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

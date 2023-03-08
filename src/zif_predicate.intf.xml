@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_INTF" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOINTERF>
+    <CLSNAME>ZIF_PREDICATE</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>A predicate (boolean-valued function) of one argument</DESCRIPT>
+    <EXPOSURE>2</EXPOSURE>
+    <STATE>1</STATE>
+    <UNICODE>X</UNICODE>
+   </VSEOINTERF>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>AND</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns a new predicate for a short-circuiting logical AND</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>IS_EQUAL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns a predicate that tests if two arguments are equal</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>NEGATE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns a predicate for the logical negation of itself</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>TEST</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Evaluates this predicate on the given argument</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>AND</CMPNAME>
+     <SCONAME>I_OTHER</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>A predicate that will be logically-ANDed with this predicate</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>AND</CMPNAME>
+     <SCONAME>R_COMPOSED_PREDICATE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>A composed predicate</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>IS_EQUAL</CMPNAME>
+     <SCONAME>I_TARGET</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>The object with which to compare, which may be null</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>IS_EQUAL</CMPNAME>
+     <SCONAME>R_EQUALITY_PREDICATE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>A predicate that tests if two arguments are equal</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>NEGATE</CMPNAME>
+     <SCONAME>R_NEGATED_PREDICATE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Predicate representing logical negation of this predicate</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>TEST</CMPNAME>
+     <SCONAME>I_INPUT</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>The input argument</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>TEST</CMPNAME>
+     <SCONAME>R_BOOL</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>&lt;em&gt;true&lt;/em&gt; if the input argument matches the predicate</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>
