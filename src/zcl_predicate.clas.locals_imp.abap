@@ -39,7 +39,7 @@ endclass.
 class negated_predicate definition "#EC CLAS_FINAL
                         create public
                         inheriting from zcl_predicate.
-  PUBLIC SECTION.
+  public section.
 
     methods constructor
               importing
@@ -49,7 +49,7 @@ class negated_predicate definition "#EC CLAS_FINAL
 
   protected section.
 
-    data a_negated_bool type xsdboolean.
+    data an_original_predicate type ref to zif_predicate.
 
 endclass.
 class negated_predicate implementation.
@@ -58,12 +58,12 @@ class negated_predicate implementation.
 
     super->constructor( ).
 
-*    a_negated_bool = i_original_predicate->test( ).
+    an_original_predicate = i_original_predicate.
 
   endmethod.
   method zif_predicate~test.
 
-*    r_bool = me->a_negated_bool.
+    r_bool = xsdbool( not me->an_original_predicate->test( i_input ) ).
 
   endmethod.
 
